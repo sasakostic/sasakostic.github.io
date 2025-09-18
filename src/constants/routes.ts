@@ -20,16 +20,16 @@ export const routes: Routes = {
     path: '/blog',
     name: 'Blog',
   },
-  // publications: {
-  //   path: '/publications',
-  //   name: 'Publications',
-  // },
+  publications: {
+    path: '/publications',
+    name: 'Publications',
+  },
 };
 
 export const TOP_NAV: Route[] = [
   routes.projects,
   routes.blog,
-  // routes.publications,
+  routes.publications,
 ];
 
 export const FOOTER_NAV: Route[] = [];

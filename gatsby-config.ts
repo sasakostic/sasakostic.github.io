@@ -9,6 +9,7 @@ import {
 } from './src/data/siteMetadata';
 
 const gatsbyConfig: GatsbyConfig = {
+  pathPrefix: "/sasakostic.github.io",
   siteMetadata,
 
   flags: {
@@ -196,7 +197,7 @@ const gatsbyConfig: GatsbyConfig = {
               }
             `,
             output: rssPath,
-            title: 'Trekhleb.dev RSS Feed',
+            title: 'sasakostic.github.io RSS Feed',
           },
         ],
       },

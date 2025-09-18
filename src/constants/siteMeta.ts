@@ -1,4 +1,4 @@
-export const siteURL = 'https://trekhleb.dev';
+export const siteURL = 'https://sasakostic.github.io';
 export const defaultSiteTitle = 'sasakostic.github.io';
 export const defaultSiteDescription = 'Portfolio site with a blog. By Sasa Kostic';
 export const brandName = 'sasakostic';
