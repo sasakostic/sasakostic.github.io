@@ -1,4 +1,4 @@
-type Slug = 'home' | 'projects' | 'blog' | 'publications';
+type Slug = 'home' | 'projects' | 'blog';
 
 export type Route = {
   path: string;
@@ -19,17 +19,12 @@ export const routes: Routes = {
   blog: {
     path: '/blog',
     name: 'Blog',
-  },
-  publications: {
-    path: '/publications',
-    name: 'Publications',
-  },
+  }
 };
 
 export const TOP_NAV: Route[] = [
   routes.projects,
   routes.blog,
-  routes.publications,
 ];
 
 export const FOOTER_NAV: Route[] = [];
