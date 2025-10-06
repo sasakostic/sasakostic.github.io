@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaRegHeart } from '@react-icons/all-files/fa/FaRegHeart';
-import { AiOutlineMail } from '@react-icons/all-files/ai/AiOutlineMail';
+// import { AiOutlineMail } from '@react-icons/all-files/ai/AiOutlineMail';
 import { FiRss } from '@react-icons/all-files/fi/FiRss';
 
 import HyperLink from './HyperLink';
