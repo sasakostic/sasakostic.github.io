@@ -1,16 +1,9 @@
 import React from 'react';
-import HyperLink from './HyperLink';
+// import HyperLink from './HyperLink';
 import type { Link } from '../../types/Link';
 import { routes } from '../../constants/routes';
 
 const Greeting = (): React.ReactElement => {
-  const projectsLink: Link = {
-    url: `${routes.projects.path}/`,
-  };
-
-  const blogLink: Link = {
-    url: `${routes.blog.path}/`,
-  };
 
 
   return (
