@@ -11,9 +11,7 @@ import Tags from '../shared/Tags';
 import FluidImage from '../shared/FluidImage';
 import ButtonLink from '../shared/ButtonLink';
 import Archived from '../shared/Archived';
-import Stars from '../shared/Stars';
 import Row from '../shared/Row';
-import { getGitHubProjectStars } from '../../utils/project';
 import { Link } from '../../types/Link';
 import HyperLink from '../shared/HyperLink';
 import ProjectAchievements from './ProjectAchievements';
@@ -44,19 +42,6 @@ const Project = (props: ProjectProps): React.ReactElement | null => {
       className="text-xs text-gray-500"
     />
   );
-
-  const projectStars = getGitHubProjectStars(project);
-  const projectStarsLink: Link = {
-    url: project?.srcURL?.url,
-    caption: 'Stars on GitHub',
-  };
-  const stars = typeof projectStars === 'number' ? (
-    <Stars
-      stars={projectStars}
-      link={projectStarsLink}
-      className="text-xs text-gray-500 font-light"
-    />
-  ) : null;
 
   /* eslint-disable react/no-array-index-key */
   const projectSummaryLines = project.summary ? project.summary.map(
@@ -149,7 +134,7 @@ const Project = (props: ProjectProps): React.ReactElement | null => {
         {projectDates}
       </div>
       <div>
-        {stars}
+        &nbsp;
       </div>
     </Row>
   );
