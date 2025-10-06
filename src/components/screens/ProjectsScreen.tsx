@@ -8,12 +8,10 @@ import Badge from '../shared/Badge';
 import Row from '../shared/Row';
 import SEO from '../shared/SEO';
 import ProjectFilters, {
-  sortByStarsDesc, sortByStartDateAsc,
+  sortByStartDateAsc,
   sortByStartDateDesc,
   SortOption, supportedSortOptions,
 } from '../elements/ProjectFilters';
-import { getGitHubProjectStars, getTotalGetHubProjectStars, projectMapToArray } from '../../utils/project';
-import Stars from '../shared/Stars';
 import { getStringSearchParam, setSearchParam } from '../../utils/url';
 
 type ProjectsScreenProps = {
@@ -45,16 +43,6 @@ const projectSorters: ProjectSorters = {
         return 0;
       }
       return a.startDate < b.startDate ? -1 : 1;
-    },
-  },
-  [sortByStarsDesc]: {
-    sort: (a: ProjectType, b: ProjectType): number => {
-      const aStars = getGitHubProjectStars(a) || 0;
-      const bStars = getGitHubProjectStars(b) || 0;
-      if (aStars === bStars) {
-        return 0;
-      }
-      return aStars > bStars ? -1 : 1;
     },
   },
 };
@@ -104,9 +92,8 @@ const ProjectsScreen = (props: ProjectsScreenProps): React.ReactElement => {
         <ProjectFilters onSort={onSort} sortBy={sortBy} />
         <Row className="ml-3">
           <div className="text-sm text-gray-500 mr-1">
-            Total stars:
+            &nbsp;
           </div>
-          <Stars stars={getTotalGetHubProjectStars(projects)} />
         </Row>
       </Row>
       <ProjectsList projects={filteredProjects} />

@@ -6,7 +6,6 @@
   "homepage": "https://sasakostic.github.io",
   "license": "0BSD",
   "scripts": {
-    "fetch-stars": "node ./src/scripts/fetchGitHubStars.js",
     "lint": "eslint 'src/**/*.{js,ts,tsx}'",
     "type": "tsc --noEmit",
     "develop": "gatsby develop",
