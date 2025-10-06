@@ -6,7 +6,8 @@ interface ProjectsListContext {
   projects: Project[];
 }
 
-const ProjectsList: React.FC<PageProps<{}, ProjectsListContext>> = ({ pageContext }) => {
+// koristimo Record<string, never> za props (prvi generic)
+const ProjectsList = ({ pageContext }: PageProps<Record<string, never>, ProjectsListContext>) => {
   const { projects } = pageContext;
 
   return (
