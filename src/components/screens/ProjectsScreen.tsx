@@ -12,6 +12,7 @@ import ProjectFilters, {
   sortByStartDateDesc,
   SortOption, supportedSortOptions,
 } from '../elements/ProjectFilters';
+import { projectMapToArray } from '../../utils/project';
 import { getStringSearchParam, setSearchParam } from '../../utils/url';
 
 type ProjectsScreenProps = {
