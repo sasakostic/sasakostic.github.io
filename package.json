@@ -1,9 +1,9 @@
 {
-  "name": "trekhleb.github.io",
+  "name": "sasakostic.github.io",
   "version": "3.0.0",
   "private": false,
   "author": "Oleksii Trekhleb",
-  "homepage": "https://trekhleb.dev",
+  "homepage": "https://sasakostic.github.io",
   "license": "0BSD",
   "scripts": {
     "fetch-stars": "node ./src/scripts/fetchGitHubStars.js",

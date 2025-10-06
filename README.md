@@ -67,4 +67,4 @@ Use [tailwindcss.com](https://tailwindcss.com) to search for available CSS class
 
 ### Custom Domain Support
 
-To serve the [trekhleb.github.io](https://sasakostic.github.io) web-site on a custom domain [trekhleb.dev](https://sasakostic.github.io) make sure that the `public` branch has `CNAME` file in the root folder. For more details read [this](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
+To serve the [sasakostic.github.io](https://sasakostic.github.io) web-site on a custom domain [trekhleb.dev](https://sasakostic.github.io) make sure that the `public` branch has `CNAME` file in the root folder. For more details read [this](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
