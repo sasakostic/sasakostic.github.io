@@ -59,7 +59,7 @@ const Footer = (props: FooterProps): React.ReactElement => {
           iconClassName="w-5 h-5"
           itemClassName="mr-2 ml-2"
         />
-        <div className="ml-3">
+        <div className="ml-3">&nbsp;
         </div>
       </div>
     </footer>
