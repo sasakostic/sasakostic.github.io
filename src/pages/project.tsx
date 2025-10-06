@@ -5,7 +5,7 @@ import BlogScreen from '../components/screens/BlogScreen';
 import { BlogPageQuery } from './__generated__/BlogPageQuery';
 
 interface BlogProps extends PageProps {
-    data: BlogPageQuery,
+  data: BlogPageQuery,
 }
 
 export const query = graphql`
@@ -41,11 +41,11 @@ export const query = graphql`
 `;
 
 const Blog = (props: BlogProps): React.ReactElement => {
-    const { data } = props;
+  const { data } = props;
 
-    return (
-        <BlogScreen posts={data} />
-    );
+  return (
+    <BlogScreen posts={data} />
+  );
 };
 
 export default Blog;
