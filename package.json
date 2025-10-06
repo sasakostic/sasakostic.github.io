@@ -12,7 +12,6 @@
     "develop-secure": "gatsby develop --https",
     "develop-mobile": "gatsby develop --host 0.0.0.0",
     "develop-mobile-secure": "gatsby develop --host 0.0.0.0 --https",
-    "prebuild": "npm run fetch-stars",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
