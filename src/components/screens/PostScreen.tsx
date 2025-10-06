@@ -4,8 +4,8 @@ import PageLayout from '../layouts/PageLayout';
 import { PostTemplateQuery } from '../../templates/__generated__/PostTemplateQuery';
 import Post from '../elements/Post';
 import SEO, { ogTypeArticle, titleModeSuffix } from '../shared/SEO';
-import SubscriptionForm from '../shared/SubscriptionForm';
-import ErrorBoundary from '../shared/ErrorBoundary';
+// import SubscriptionForm from '../shared/SubscriptionForm';
+// import ErrorBoundary from '../shared/ErrorBoundary';
 
 type PostScreenProps = {
   post: PostTemplateQuery;
@@ -27,9 +27,7 @@ const PostScreen = (props: PostScreenProps): React.ReactElement => {
       <Post post={post}>{children}</Post>
       <div className="flex flex-row justify-center items-center mt-16">
         <div className="max-w-md">
-          {/* <ErrorBoundary>
-            <SubscriptionForm />
-          </ErrorBoundary> */}
+          &nbsp;
         </div>
       </div>
     </PageLayout>
