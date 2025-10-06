@@ -48,7 +48,13 @@ const gatsbyConfig: GatsbyConfig = {
         path: `${__dirname}/src/posts`,
       },
     },
-
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'project',
+        path: `${__dirname}/src/project`,
+      },
+    },
     // @see: https://www.gatsbyjs.com/plugins/gatsby-source-filesystem/
     {
       resolve: 'gatsby-source-filesystem',
