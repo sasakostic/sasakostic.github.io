@@ -13,7 +13,10 @@
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*"
