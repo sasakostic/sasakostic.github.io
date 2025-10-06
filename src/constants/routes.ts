@@ -19,7 +19,7 @@ export const routes: Routes = {
   blog: {
     path: '/blog',
     name: 'Blog',
-  }
+  },
 };
 
 export const TOP_NAV: Route[] = [
